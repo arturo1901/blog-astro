@@ -1,5 +1,5 @@
 ---
-import Navigation from "../components/Navigation.astro";
+import Header from "../components/Header.astro";
 import "../styles/global.css";
 const pageTitle = "Sobre mi";
 
@@ -39,7 +39,7 @@ const skillColor = "navy";
     </style>
   </head>
   <body>
-    <Navigation />
+    <Header />
     <h1>{pageTitle}</h1>
     <h2>... ¡y mi nuevo sitio Astro!</h2>
 
@@ -68,5 +68,9 @@ const skillColor = "navy";
     {happy && <p>¡Estoy feliz de aprender Astro!</p>}
     {finished && <p>¡He terminado este tutorial!</p>}
     {goal === 3 ? <p>MI objetivo es terminar en 3 dias.</p> : <p>Mi objetivo no son 3 dias.</p>}
+
+    <script>
+      import "../scripts/menu.js";
+    </script>
   </body>
 </html>
